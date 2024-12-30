@@ -2,4 +2,4 @@
 
 ### .xlsx 파일 필터링 
 
-+ <img src="C:\Users\USER\Documents\iamjun\streamlit\imgs\image.png">
++ <img src="imgs\image.png">
