@@ -1,5 +1,11 @@
+import sys
+import os
 from fastapi import FastAPI, UploadFile, Form
-from server.utils import filter_excel_file
+
+# 현재 파일의 디렉토리를 sys.path에 추가
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from utils import filter_excel_file
 
 app = FastAPI()
 
@@ -14,4 +20,4 @@ async def filter_excel(file: UploadFile, keyword: str = Form(...)):
 # FastAPI 서버 실행
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8097)
