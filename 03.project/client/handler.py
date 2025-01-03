@@ -13,5 +13,5 @@ def get_filter_keyword(user_message):
             {"role": "user", "content": user_message}
         ]
     )
-    keyword=response['choices'][0]['message']['content']
+    keyword = response['choices'][0]['message']['content']
     return keyword
