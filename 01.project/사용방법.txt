@@ -1,0 +1,4 @@
+1. falsk sever start (python ExcelChatapp.1.0.py)
+2. streamlit app start (streamlit run interface.py)
+3. 2024/12/01 ~ 2024/12/31 값 조회 가능,
+    그 이후 값 조회 시 ValueError: If using all scalar values, you must pass an index 발생

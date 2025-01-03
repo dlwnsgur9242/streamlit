@@ -17,6 +17,7 @@ if st.button("데이터 가져오기"):
 
     if response.status_code == 200:
         filtered_data = pd.DataFrame(response.json())
+        print(response.json())
         st.write("### 필터링된 데이터:")
         st.dataframe(filtered_data)
     else:
