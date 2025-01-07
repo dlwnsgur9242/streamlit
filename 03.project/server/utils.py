@@ -1,7 +1,7 @@
 import pandas as pd
 from io import BytesIO
 
-async def filter_excel_file(file, keyword: str):
+async def process_excel(file, keyword: str):
     """
     업로드된 Excel 파일에서 특정 키워드로 데이터를 필터링.
     
