@@ -4,9 +4,9 @@ import json
 
 # pyodbc 연결 문자열
 connection_string = (
-    'DRIVER={ODBC Driver 18 for SQL Server};'
-    'SERVER=127.0.0.1,35791;'
-    'DATABASE=_dy_solar_5.1;'
+    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'SERVER=DESKTOP-C3BL59A\SQLEXPRESS;'
+    'DATABASE=_dy_solar_5.1_test02;'
     'UID=sa;'
     'PWD=Ydsolemon#@31;'
     'TrustServerCertificate=yes;'
@@ -41,7 +41,7 @@ for table_name, table in metadata.tables.items():
     database_metadata[table_name] = table_info
 
 # JSON 저장
-with open("mssql_metadata.json", "w", encoding="utf-8") as json_file:
+with open("03.project\data_test\ms_metadata.json", "w", encoding="utf-8") as json_file:
     json.dump(database_metadata, json_file, indent=4, ensure_ascii=False)
 
 print("MSSQL 메타데이터가 mssql_metadata.json에 저장되었습니다.")
